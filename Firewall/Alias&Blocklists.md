@@ -16,4 +16,8 @@ Regel WAN eingehend, alle Prokolle und wähle den Alias aus.
 
 Die gleiche Regel für LAN ausgehend. So wird jeglicher Verkehr ein- und ausgehend basierend auf dieser Liste geblockt. Die Regel LAN ausgehend verhindert das aufrufen von Websites mit Cross-Side-Scripting und ähnlichem. Sprich, auch wenn du auf eine bösartige Seite geleitet wirst, werden diese IPS geblockt. Bitte beachte, dass auch dies keinen 100%igen Schutz bietet, sondern nur ein Bausteinen von vielen ist.
 
-3. GeiIP
+2. GeoIP
+
+Zwar kann man auch dies über solche Listen machen, doch gerade das GeoIP-Addon für die OPNSense finde ich super. Ihr müsst euch dazu auf der Seite registrieren und einen API-Key hinterlegen. Eine Anleitung folgt.
+
+Anschließend wird wieder ein Alias angelegt. In diesem ist es möglich Länder auszuwählen. Zum Beispiel Alias "autocratic" und alle autokratischen Seiten auswählen. Dann ebenfalls eine ein- und ausgehende Regel erstellen und es wird jeglicher Traffik von und zu euch zu autokratischen Staten geblockt. Restriktiv bedeutet dies natürlich, dass Alibaba nicht verfügbar wäre, da müsste eine Whitelist erstellt werden und bei den Regeln oberhalb der autocratic verschoben werden.
