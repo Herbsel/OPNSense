@@ -14,6 +14,6 @@ Erstelle einen Alias in der OPNSense bspw. FirholL1 und hinterlege folgende TXT 
 Anschließend Firewall --> Regeln --> WAN
 Regel WAN eingehend, alle Prokolle und wähle den Alias aus.
 
-Die gleiche Regel für LAN ausgehend. So wird jeglicher Verkehr ein- und ausgehend basierend auf dieser Liste geblockt. Die Regel LAN ausgehend verhindert das aufrufen von Websites mit Cross-Side-Scripting und ähnlichem. Sprich, auch wenn ihr auf eine bösartige Se
+Die gleiche Regel für LAN ausgehend. So wird jeglicher Verkehr ein- und ausgehend basierend auf dieser Liste geblockt. Die Regel LAN ausgehend verhindert das aufrufen von Websites mit Cross-Side-Scripting und ähnlichem. Sprich, auch wenn du auf eine bösartige Seite geleitet wirst, werden diese IPS geblockt. Bitte beachte, dass auch dies keinen 100%igen Schutz bietet, sondern nur ein Bausteinen von vielen ist.
 
 3. GeiIP
